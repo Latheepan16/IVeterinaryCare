@@ -89,11 +89,12 @@ a{
 .main{
     width: 20%;
     padding: 20px;
-    box-shadow: #3333336e 4px 4px 6px 4px;
+    background-color: rgb(210, 207, 255);
     margin: 20px;
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
+    transition: 0.7s;
 }
 .div{
     margin: 10px;
@@ -160,10 +161,12 @@ a{
     position: sticky;
     top: 2px;
     cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
 }
 
 .close:hover{
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -254,6 +257,7 @@ a{
     margin: 10px;
      color: rgb(255, 255, 255);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .Point:hover{
@@ -387,6 +391,7 @@ a{
      font-weight: 900;
      border: none;
     cursor: pointer;
+    transition: 0.5s;
   }
 
   .ll a{
@@ -414,6 +419,18 @@ a{
     transition: 0.6s;
   }
 
+  .main:hover{ 
+     transform: translateY(-15px);
+    
+  }
+
+  .btn:hover{
+    transform: translateY(-15px);
+  }
+
+  .menubtn:hover{
+    transform: translateY(-5px);
+  }
 @media(max-width:738px){
    
 
@@ -441,7 +458,7 @@ a{
     }
 
     .about-doctor img{
-       width: 70%;
+       width: 100%;
        position: absolute;
        top: 50%;
        left: 50%;
