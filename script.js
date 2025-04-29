@@ -47,7 +47,7 @@ function show(event){
         var p = divs[i].querySelector('p').innerText.toLowerCase();  // Get the text of the p inside each .main div
 
         if (p.includes(input)) {
-            divs[i].style.display = 'block';  // Show the div if it matches
+            divs[i].style.display = 'inline-block';  // Show the div if it matches
         } else {
             divs[i].style.display = 'none';  // Hide the div if it doesn't match
         }
