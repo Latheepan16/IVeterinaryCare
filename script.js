@@ -32,7 +32,7 @@ function show(event){
      var preview = document.querySelector('.view');
      preview.style.top = "-60%"
      over.style.display = "none"
-     menu.style.left = "-60%"
+     menu.style.left = "-100%"
  }
 
  
