@@ -1,0 +1,471 @@
+body{
+    font-family: Parkinsans;
+    padding-bottom: 50px;
+   background-color: rgb(232, 232, 255);
+}
+
+*{
+    margin: 0;
+}
+
+.navbar{
+  
+    background-size: cover;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -2px;
+    z-index: 3;
+    justify-content: space-between;
+
+   color: white;
+
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar h1{
+   
+  
+   
+   border-radius: 10px;
+   margin-left: 10px;
+   transition: 0.5s;
+  
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+    
+.about-doctor {
+    margin: 10px;
+    position: relative; /* Ensures that p is positioned relative to this container */
+    height: 400px; /* Set a specific height for the .about-doctor container */
+    width: 90%;
+}
+
+.about-doctor img {
+    filter: blur(0px);
+    position: relative;
+  
+    border-radius: 5px;
+    width: 100%; /* Makes the image responsive and fit the container width */
+    height: 100%; /* Ensures the image fills the container */
+    object-fit: cover; /* Maintains the image aspect ratio without distortion */
+}
+
+.about-doctor p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the <p> element within .about-doctor */
+    color: rgb(253, 250, 250); /* Makes sure the text is visible */
+    font-family: 'Parkinsans', sans-serif; /* Applies the font you imported */
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 5px;
+}
+
+.logo{
+    max-width: 110px;
+    max-height: 110px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.ttle{
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+.main{
+    width: 20%;
+    padding: 20px;
+    box-shadow: #3333336e 4px 4px 6px 4px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.div{
+    margin: 10px;
+    position: relative; /* Ensures that p is positioned relative to this container */
+    height: 400px; /* Set a specific height for the .about-doctor container */
+    width: 96%;
+}
+
+.div img {
+    filter: blur(0px);
+    position: relative;
+    transition: 0.1s;
+    border-radius: 5px;
+    width: 100%; /* Makes the image responsive and fit the container width */
+    height: 100%; /* Ensures the image fills the container */
+    object-fit: cover; /* Maintains the image aspect ratio without distortion */
+}
+
+.div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the <p> element within .about-doctor */
+    color: rgb(253, 250, 250); /* Makes sure the text is visible */
+    font-family: 'Parkinsans', sans-serif; /* Applies the font you imported */
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 5px;
+}
+
+.view{
+    padding: 20px;
+    background-color: rgb(204, 192, 255);
+    border-radius: 20px;
+    position: fixed;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: 0.2s;
+    max-height: 600px;
+    z-index: 10;
+    overflow-y: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.input{
+    display: none;
+}
+
+.lala{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.close{
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    background-color: rgba(145, 132, 132, 0.568);
+    border: 2px black solid;
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 50%;
+    position: sticky;
+    top: 2px;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+}
+
+.view p{
+    background-color: rgba(250, 247, 247, 0.527);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(10, 10, 10);
+  
+    transition: 0.1s;
+    font-size: small;
+}
+
+.view p:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    font-size: medium;
+}
+
+#search{
+    padding: 10px;
+    width: 50%;
+    margin-left: 30px;
+    font-size: larger;
+    border-radius: 20px;
+    border: none;
+}
+
+#search:focus{
+    border: none;
+}
+
+.div img:focus{
+    filter: blur(5px);
+}
+
+.view h1{
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.title{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.back{
+    height: 700px;
+    width: 100%;
+    filter: blur(4px);
+}
+
+::selection{
+    background-color: rgba(255, 192, 203, 0.61);
+    color: black;
+}
+
+.Point{
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: larger;
+    border: 1px black solid;
+    transition: 0.3s;
+}
+
+.btn{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    margin: 10px;
+     color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.Point:hover{
+    background-color: rgba(255, 0, 0, 0.548);
+
+}
+
+.home{
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    opacity: 50%;
+    border-radius: 10px;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.over{
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+}
+
+.menu{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    z-index: 19;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 4px 4px 6px 4px #00000077;
+    transition: 0.5s;
+    padding: 10px;
+    
+}
+
+.closeMenu{
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border: 2px rgb(0, 0, 0) solid;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.content{
+    justify-content: center;
+}
+
+.slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    max-height: 700px;
+}
+
+  .slides {
+    display: flex;
+   
+  }
+
+  .slide {
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 10px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .counter {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .menubtn{
+     background-color: rgb(218, 214, 255);
+     color: rgb(0, 0, 0);
+    height:40px;
+    width:40px;
+     border-radius: 10px;
+     font-size: larger;
+     font-weight: 900;
+     border: none;
+    cursor: pointer;
+  }
+
+  .menu a{
+       font-size: 20px;
+       width: 100%;
+       display: block;
+       
+       margin: 30px;
+  }
+
+  .menu a:hover{
+    color: rgb(255, 133, 133);
+    text-decoration: underline;
+    text-decoration-color: rgb(187, 187, 255);
+  }
+
+  
+
+@media(max-width:738px){
+   
+
+    #search{
+        width: 50%;
+    }
+    .navbar{
+        width: 94%;
+    }
+
+    body{
+      overflow-x: hidden none;
+    }
+
+    .main{
+        width: 90%;
+    }
+
+    .view{
+        width: 80%;
+    }
+
+    .div img{
+        width:95%;
+    }
+
+    .about-doctor img{
+       width: 70%;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50% , -50%);
+    }
+
+    .home{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+
+    .title{
+        width: 95%;
+    }
+
+    .menu{
+        width: 50%;
+
+        
+    }
+
+    .logo{
+        max-height: 70px;
+        max-width: 70px;
+    }
+
+    .home{
+        left: 31%;
+    }
+
+    
+
+    .toclose{
+        display: none;
+    }
+
+    .main{
+        padding: 5px;
+    }
+}
