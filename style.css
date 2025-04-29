@@ -462,7 +462,7 @@ a{
     .menu{
         width: 50%;
 
-        
+        left: -100%;
     }
 
     .logo{
