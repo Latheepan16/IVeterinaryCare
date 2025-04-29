@@ -1,3 +1,4 @@
+
 body{
     font-family: Parkinsans;
     padding-bottom: 50px;
@@ -293,7 +294,7 @@ a{
     background-color: rgb(68, 68, 68);
     box-shadow: 4px 4px 6px 4px #00000077;
     transition: 0.5s;
-    padding: 10px;
+    padding: 30px;
     
 }
 
@@ -325,21 +326,26 @@ a{
 
 .slider {
     width: 100%;
-    max-width: 100%;
+    max-width: 70%;
     overflow: hidden;
     position: relative;
     margin: auto;
-    max-height: 700px;
+    max-height: 600px;
 }
 
   .slides {
     display: flex;
-   
+    transition: 0.5s ease-in-out;
   }
 
   .slide {
     min-width: 100%;
     object-fit: cover;
+    
+  }
+
+  .slide img{
+     width: 100%;
   }
 
   .prev, .next {
@@ -383,21 +389,30 @@ a{
     cursor: pointer;
   }
 
-  .menu a{
+  .ll a{
        font-size: 20px;
        width: 100%;
        display: block;
        
-       margin: 30px;
+       margin: 10px;
   }
 
-  .menu a:hover{
+  .ll:hover{
     color: rgb(255, 133, 133);
-    text-decoration: underline;
-    text-decoration-color: rgb(187, 187, 255);
+    
+
+    .underline{
+
+        width: 100%;
+    }
   }
 
-  
+  .underline{
+    height: 5px;
+    width: 0%;
+    background-color: rgb(255, 116, 116);
+    transition: 0.6s;
+  }
 
 @media(max-width:738px){
    
