@@ -18,7 +18,7 @@
     <div class="navbar">
      
        <h1>I Veterinary Care</h1>
-       <button class="menubtn" onclick="menuOpen()">☰</button>
+       <button class="menubtn" onclick="menuOpen()"><i class="fa-solid fa-bars"></i></button>
        
     </div>
 
@@ -26,18 +26,38 @@
         <div class="Header">
         <img src="http://images4.fanpop.com/image/photos/22000000/Pets-animals-and-pets-22054691-1024-768.jpg" class="back">  
         <img src="Logo.JPG" class="home">
-        <h1 class="title">Care your pets like family🤗!</h1>
+        <h1 class="title">Care your pets like family!</h1>
         
        </div>
 
        <center>
-        <h1>Why I Vetenirary care🤔?</h1>
+        <h1>Why I Vetenirary care?</h1>
         <p class="Point">-Medicine suggesions</p>
         <p class="Point">-Doctor's contact</p>
         <p class="Point">-Free web access</p>
         <p class="Point">-Doctor's address</p>
 
-        <button class="btn" onclick="window.location.href = 'index.html' ">Go to content page👉</button>
+        <button class="btn" onclick="window.location.href = 'index.html' ">Explore more</button>
+
+        <div class="slider">
+          <center>
+            <h1>We Are Treating:</h1>
+          </center>
+            <div class="slides">
+              <div class="slide"><img src="https://www.treehugger.com/thmb/W2O_zOCLxHG6aMfryLbFH59kQYs=/3582x2559/filters:no_upscale():max_bytes(150000):strip_icc()/babycowgrass-244fb9e254d745119513baeffaca07ac.jpg" alt="pet1"></div>
+              <div class="slide"><img src="https://www.goatfarming.in/wp-content/uploads/2023/05/Cashmere-Goat-Characteristics1-1024x684.jpg" alt="pet2"></div>
+              <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.hJ9MADIGXYBjeRjJtlGahwHaEK&pid=Api&P=0&h=180" alt="pet3"></div>
+              <div class="slide"><img src="https://cdn.pixabay.com/photo/2016/04/12/20/12/cat-1325297_960_720.jpg" alt="pet3"></div>
+              <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.07qxMQeXJjb_s06aPxX2wAHaFN&pid=Api&P=0&h=180" alt="pet 5"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        
+        <div class="counter" id="imageCounter">Image 1 of 3</div>
+        <div class="over" onclick="clos()">
+    
+        </div>
 
        
     </center>
@@ -50,7 +70,7 @@
      <div class="view">
 
      </div>
-      <div class="menu">
+     <div class="menu">
        
         <button class="closeMenu" onclick="clos()">×</button>
         <div class="ll">
@@ -77,20 +97,7 @@
     </div>
     </div>
 
-   <div class="slider">
-      <center>
-        <h1>Treating:</h1>
-      </center>
-        <div class="slides">
-          <div class="slide"><img src="https://www.treehugger.com/thmb/W2O_zOCLxHG6aMfryLbFH59kQYs=/3582x2559/filters:no_upscale():max_bytes(150000):strip_icc()/babycowgrass-244fb9e254d745119513baeffaca07ac.jpg" alt="pet1"></div>
-          <div class="slide"><img src="https://www.goatfarming.in/wp-content/uploads/2023/05/Cashmere-Goat-Characteristics1-1024x684.jpg" alt="pet2"></div>
-          <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.hJ9MADIGXYBjeRjJtlGahwHaEK&pid=Api&P=0&h=180" alt="pet3"></div>
-          <div class="slide"><img src="https://cdn.pixabay.com/photo/2016/04/12/20/12/cat-1325297_960_720.jpg" alt="pet3"></div>
-          <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.07qxMQeXJjb_s06aPxX2wAHaFN&pid=Api&P=0&h=180" alt="pet 5"></div>
-        </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-      </div>
+  
 </body>
 <script src="script.js"></script>
 </html>
