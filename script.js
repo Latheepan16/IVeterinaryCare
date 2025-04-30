@@ -32,7 +32,7 @@ function show(event){
      var preview = document.querySelector('.view');
      preview.style.top = "-60%"
      over.style.display = "none"
-     menu.style.left = "-100%"
+     menu.style.left = "-60%"
  }
 
  
@@ -94,3 +94,9 @@ let currentIndex = 0;
     updateSlide();
 
  
+    function delayLink(event, element) {
+        event.preventDefault(); // Stop the default navigation
+        setTimeout(() => {
+          window.location.href = element.href; // Navigate after delay
+        }, 1000); // Delay in milliseconds (2000ms = 2 seconds)
+      }
