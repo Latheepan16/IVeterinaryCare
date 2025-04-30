@@ -2,6 +2,7 @@ body{
     font-family: Parkinsans;
     padding-bottom: 50px;
    background-color: rgb(232, 232, 255);
+   transition: 1s;
 }
 
 *{
@@ -88,7 +89,7 @@ a{
 
 .main{
     width: 20%;
-    padding: 20px;
+    padding: 16px;
     background-color: rgb(210, 207, 255);
     margin: 20px;
     border-radius: 10px;
@@ -394,23 +395,27 @@ a{
     transition: 0.5s;
   }
 
-  .ll a{
-       font-size: 20px;
-       width: 100%;
-       display: block;
-       
-       margin: 10px;
+  .ll a {
+    font-size: 20px;
+    width: 100%;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
   }
-
-  .ll:hover{
+  
+  .ll a:focus {
     color: rgb(255, 133, 133);
-    
-
-    .underline{
-
-        width: 100%;
-    }
   }
+  
+  /* Style the underline when the <a> tag is focused */
+  .ll a:focus + .underline {
+    width: 100%;
+    background-color: rgb(255, 133, 133); /* Example visual */
+    height: 2px;
+    transition: width 1s ease;
+  }
+  
+  
 
   .underline{
     height: 5px;
