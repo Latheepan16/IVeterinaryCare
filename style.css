@@ -335,6 +335,7 @@ a{
     position: relative;
     margin: auto;
     max-height: 600px;
+    border-radius: 10px;
 }
 
   .slides {
@@ -436,6 +437,29 @@ a{
   .menubtn:hover{
     transform: translateY(-5px);
   }
+
+  video{
+    max-height: 400px;
+    max-width: 600px;
+  }
+
+
+  .vidtit{
+    background-color: rgb(234, 210, 255);
+    width: fit-content;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .video{
+    width: fit-content;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(135, 135, 211);
+    border-radius: 10px;
+    display: inline-block;
+  }
 @media(max-width:738px){
    
 
@@ -504,5 +528,10 @@ a{
 
     .main{
         padding: 5px;
+    }
+
+    iframe{
+       height: 400px;
+       width: 400px;
     }
 }
