@@ -445,7 +445,8 @@ a{
 
 
   .vidtit{
-    background-color: rgb(234, 210, 255);
+    background-color: rgb(233, 208, 255);
+    color: rgb(120, 85, 151);
     width: fit-content;
     padding: 10px;
     margin: 20px;
@@ -459,6 +460,10 @@ a{
     background-color: rgb(135, 135, 211);
     border-radius: 10px;
     display: inline-block;
+  }
+
+  iframe{
+    border-radius: 10px;
   }
 @media(max-width:738px){
    
@@ -531,7 +536,7 @@ a{
     }
 
     iframe{
-       height: 400px;
-       width: 400px;
+       height: 200px;
+       width: 370px;
     }
 }
